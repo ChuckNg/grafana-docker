@@ -1,0 +1,11 @@
+/grafana/logs/*.log {
+    compress
+    dateext
+    sharedscripts
+    daily
+    rotate 30
+    #postrotate
+    #    service grafana reload
+    #endscript
+}
+
